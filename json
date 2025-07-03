@@ -1,0 +1,18 @@
+{
+  "IndexDocument": {
+    "Suffix": "index.html"
+  },
+  "ErrorDocument": {
+    "Key": "error.html"
+  },
+  "RoutingRules": [
+    {
+      "Condition": {
+        "KeyPrefixEquals": "docs/"
+      },
+      "Redirect": {
+        "ReplaceKeyPrefixWith": "documents/"
+      }
+    }
+  ]
+}
